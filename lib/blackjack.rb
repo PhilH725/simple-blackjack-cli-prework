@@ -39,7 +39,15 @@ def hit?(num)
   # code hit? here
   prompt_user
   action = get_user_input
-  if
+  if action == 'h'
+    new_hand = num + deal_card
+  elsif action == 's'
+    num
+  else
+    invalid_command
+    hit?(num)
+  end
+    
 end
 
 def invalid_command
