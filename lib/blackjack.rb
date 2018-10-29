@@ -43,6 +43,7 @@ def hit?(num)
     new_hand = num + deal_card
   elsif action == 's'
     num
+    "end"
   else
     invalid_command
     hit?(num)
