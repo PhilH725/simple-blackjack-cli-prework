@@ -43,7 +43,6 @@ def hit?(num)
     new_hand = num + deal_card
   elsif action == 's'
     num
-    "end"
   else
     invalid_command
     hit?(num)
@@ -63,7 +62,7 @@ def runner
   # code runner here
   welcome
   hand = initial_round
-  until hand > 21 || "end"
+  until hand > 21
     display_card_total(hand)
     hit?(hand)
   end
