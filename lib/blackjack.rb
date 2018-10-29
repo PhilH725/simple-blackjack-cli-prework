@@ -47,7 +47,6 @@ def hit?(num)
     invalid_command
     hit?(num)
   end
-    
 end
 
 def invalid_command
