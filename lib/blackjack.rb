@@ -35,12 +35,16 @@ def initial_round
   hand
 end
 
-def hit?
+def hit?(num)
   # code hit? here
+  prompt_user
+  action = get_user_input
+  if
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
